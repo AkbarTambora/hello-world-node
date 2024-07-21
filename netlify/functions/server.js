@@ -5,7 +5,7 @@ const app = express();
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send('Hello World');
+    res.send('<html><body><h1>Hello World</h1></body></html>');
 });
 
 app.use('/.netlify/functions/server', router);
